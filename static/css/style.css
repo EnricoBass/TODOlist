@@ -1,0 +1,21 @@
+header.login, header.signin{
+    margin: 100px 0 0;
+}
+
+div.create{
+background-color: #808080;
+height: 150px;
+width:100%;
+margin: 0;
+}
+
+a.create_list:link {
+    color: #000000;
+}
+
+.img_start{
+background-color: #808080;
+}
+h1{
+text-align: center;
+}

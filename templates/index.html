@@ -1,0 +1,18 @@
+{% include "header.html" %}
+{% block content %}
+<header>
+    <img src="static/to-do-list.png">
+</header>
+<div class="container create">
+    <div class="row">
+        <div class="col-lg-10 col-md-6 mx-center color">
+            <a class="create_list" href="{{url_for('to_do_list')}}"><h1>Create your List</h1></a>
+        </div>
+        <div class="col-lg-2 col-md-6 mx-auto">
+            <img class="img_start" src='https://tse3.mm.bing.net/th?id=OIP.aiMW6DhpVNBwW-BpNlaCtgAAAA&pid=Api&P=0&w=151&h=157' width='500' height='150'>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+

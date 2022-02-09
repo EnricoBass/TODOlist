@@ -1,0 +1,26 @@
+{% include "header.html" %}
+{% block content %}
+<header class="login">
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+            <form method="post">
+                {{csrf_token}}
+                {% for item in user.list_items %}
+                <input type="checkbox" name="list_item_{{ item.id }}" >
+
+                <label>{{item.list_item}}</label>
+                <a href="{{url_for('delete_item', id=item.id)}}"><img src="static/close.png" width='20' height='20'></a>
+                <br>
+                {% endfor %}
+                <input type="submit" name="Delete" value="Delete List">
+                <input type="submit" name="add" value="Create new list">
+            </form>
+
+        </div>
+    </div>
+</div>
+
+</header>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% include "header.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block content %}
+<header class="signin">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+            <h1>Sign-in</h1>
+            <span class="subheading">Sign-up and create your own To-do List to handle your work efficiently</span>
+        </div>
+    </div>
+
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+            {{ wtf.quick_form(form, novalidate=True) }}
+        </div>
+    </div>
+</div>
+</header>
+{% endblock %}
+
+
